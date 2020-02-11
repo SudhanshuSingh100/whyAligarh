@@ -1,0 +1,834 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Introduce Aligarh</title>
+		<meta charset="utf-8">
+		<!-- mannual design -->
+		<link rel="stylesheet" type="text/css" href="style.css">
+        <script type="text/javascript" src="script.js"></script>
+
+
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	   <!-- boostrap cdn -->
+	    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+	    <!-- font Awesome cdn -->
+	    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	   <!-- bootstrap javascript cdn -->
+	    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+	   <!-- google font cdn-->
+	    <link href="https://fonts.googleapis.com/css?family=Teko&display=swap" rel="stylesheet">
+	     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	   <!-- material Design for bootstrap -->
+
+	      <!-- Compiled and minified CSS -->
+	    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+	    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	    
+	     <!-- Compiled and minified JavaScript  footer-->
+	    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+			<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+			<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+			<link rel="stylesheet" href="node_modules/mdbootstrap/css/bootstrap.min.css">
+			<link rel="stylesheet" href="node_modules/mdbootstrap/css/mdb.min.css">
+			<link rel="stylesheet" href="node_modules/mdbootstrap/css/style.css">
+ <style>
+ *{
+	
+	margin: 0px;
+	padding : 0px;
+}
+
+.home{
+	position: absolute; 
+	width:100%;
+	height:100vh;
+	/*background-image: url(images/build.jpg);*/
+}
+
+ #loading{
+      	position:fixed;
+      	width: 100%;
+      	height:100vh;
+      	background:#fff url(images/loadimg.gif) no-repeat center;
+      	/*z-index: 99999;*/
+      }
+
+.slider{ 
+	height: 80vh !important;
+    /*background: rgba(200, 54, 54, 0.5);*/
+/*	  position: relative;
+	  display: block;
+	  /*width: 100%;*/
+	  /*height: 100%;*/
+	/*  top: 0;
+	  left: 0;
+	  right: 0;
+	  bottom: 0;
+	  background-color: rgba(200,50,54,0.5);
+	  z-index: 2;
+	  cursor: pointer;
+*/
+	 }
+
+.color-overlay{
+	 	width: 100% ;
+	 	height:80%;
+	 	background-color: rgba(24, 125, 255,0.4) !important ;
+	 	opacity: 0.4;
+	 	position: relative;
+	 }
+
+
+ nav ul a {
+    -webkit-transition: background-color .3s;
+    transition: background-color .3s;
+    font-size: 1.1rem;
+    color: #2979ff;
+    display: block;
+    padding: 0 5px;
+    cursor: pointer;
+    font-weight: 700;
+    margin-right: 50px;
+}
+
+ section > h3.section-home , h5.section-home  {
+	font-size: 65px;
+	font-family: 'Pacifico',cursive;
+	z-index: 2;
+}
+
+ </style>
+
+
+</head>
+
+ <body onload="loaderFunc()">   <!--onload="loaderFunc()" -->
+	<div id="loading"></div>
+      
+      <div class="navbar-fixed">
+			<nav>
+			    <div class="nav-wrapper white">
+			      <a href="#!" class="brand-logo"><img src="images/logo_me.jpg" class="rounded-circle" style="width:35px; height:35px;margin-left: 150px;"></a>
+			      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons blue-text text-accent-3">menu</i></a>
+			      <ul class="right hide-on-med-and-down blue-text text-accent-3">
+			        <li><a href="#section-home">Home</a></li>
+			        <li><a href="#section-new">New</a></li>
+			        <li><a href="#section-famous">Famous</a></li>
+			        <li><a href="#section-food">Food</a></li>
+			        <li><a href="#section-contact">About</a></li>
+			      </ul>
+			    </div>
+			</nav>
+           
+			  <ul class="sidenav blue accent-1 white-text text-lighten-2" id="mobile-demo">   
+			    <li><a href="#section-home">Home</a></li>
+			    <li><a href="#section-new">New</a></li>
+			    <li><a href="#section-famous">Famous</a></li>
+			    <li><a href="#section-food">Food</a></li>
+			    <li><a href="#section-contact">About</a></li>
+			  </ul>
+
+     </div>
+
+
+
+
+
+<!--breif introduction of emerging sector , area , new places ,education  industries etc -->
+<section class="section-home">
+
+	<div class="slider color-overlay">
+		    <ul class="slides ">
+		      <li>
+		        <img src="images/railroadway.jpg"> 
+		        <div class="caption center-align">
+		          <h3  class="font-weight-bold blue-text text-darken-3">City of Locks</h3>
+		          <h5 class="font-weight-bold blue-text text-darken-3">Locks are building-block of the city.</h5>
+		        </div>
+		      </li>
+		      <li>
+		        <img class="responsive-img" src="images/amucircle.jpg"> <!-- random image -->
+		        <div class="caption left-align">
+		          <h3  class="font-weight-bold blue-text text-darken-3">University Town</h3>
+		          <h5 class="font-weight-bold blue-text text-darken-3">Taught man what he knew not.</h5>
+		        </div>
+		      </li>
+		      <li>
+		        <img class="responsive-img"  src="images/mang.jpg"> <!-- random image -->
+		        <div class="caption right-align">
+		          <h3  class="font-weight-bold blue-text text-darken-3">Religious source</h3>
+		          <h5 class="font-weight-bold blue-text text-darken-3">All are one in a thread</h5>
+		        </div>
+		      </li>
+		      <li>
+		        <img class="responsive-img"  src="images/Library2.jpg"> <!-- random image -->
+		        <div class="caption center-align">
+		          <h3  class="font-weight-bold blue-text text-darken-3">Innovate the Education</h3>
+		          <h5 class="font-weight-bold blue-text text-darken-3">Shaping the world.</h5>
+		        </div>
+		      </li>
+		      <li>
+		        <img class="responsive-img" src="images/amumasjid.jpg"> <!-- random image -->
+		        <div class="caption center-align">
+		          <h3  class="font-weight-bold blue-text text-darken-3">Come and Join Us</h3>
+		          <h5 class="font-weight-bold blue-text text-darken-3">We are beautiful stuff.</h5>
+		        </div>
+		      </li>
+		    </ul>
+		  </div>
+
+</section>
+
+
+
+<!-- new developed site of the city -->
+<section id="section-home">
+	  
+       <!-- <div class="parallax-container">
+          <div class="parallax"><img src="images/robo.jpg"></div>
+       </div> -->
+    <div class="section white">
+      <div class="row container">
+        <h2 class="header blue-text text-accent-3">Aligarh</h2>
+        
+        <p class="grey-text text-darken-3">Aligarh ( formerly Kol) is a city in the state of Uttar Pradesh in India. It is the administrative headquarters of Aligarh district, and lies approximately 130 kilometres (81 mi) southeast of the capital, New Delhi.</p>
+        It is a university town, notable as the seat of Aligarh Muslim University, which was founded here as Muhammadan Anglo-Oriental College in 1875, initiating the Aligarh movement.
+        <p>The early history of the district, through the 12th century AD is obscure. According to Edwin T. Atkinson, the name Kol was given to the city by Balarama, who slew here the great Asura (demon) Kol and with the assistance of the Ahirs subdued this part of the Doab. In another account, Atkinson points out a “legend” that Kol was founded by the Dor tribe of Rajputs in 372 AD. This could be further confirmed by an old fort, the Dor fortress, now in ruins, which lies at the city’s centre. It was re-named Ramgarh and finally, when a Shia commander, Najaf Khan, captured Kol, he gave it its present name of Aligarh. Aligarh Fort (also called Aligarh Qila), as it stands today, was built by French engineers under the control of French officers Benoît de Boigne and Perron.</p>
+
+        <p>Establishment of Aligarh Muslim University (1875):- In 1875, Sir Syed Ahmed Khan founded the Muhammadan Anglo Oriental College in Aligarh and patterned the college after Oxford and Cambridge universities that he had visited on a trip to England. This later became Aligarh Muslim University in 1920.</p>     
+
+
+       </div>
+    </div>
+
+   
+
+
+</section>
+
+
+
+<!-- famous places of the city -->
+<section id="section-famous">
+		                                              <div class="parallax-container">
+													      <div class="parallax"><img src="images/amustra.jpg"></div>
+													    </div>   
+	    <!-- for place 1 -->
+	     <div class="container">
+	     	<h2 class="header   blue-text text-accent-3">AMU</h2>
+            
+            <p>Aligarh Muslim University (AMU) is an Indian public university, which was originally established by Sir Syed Ahmad Khan as the Muhammadan Anglo-Oriental College in 1875. Muhammadan Anglo-Oriental College became Aligarh Muslim University in 1920, following the Aligarh Muslim University Act. The main campus of AMU is located in the city of Aligarh. Spread over 467.6 hectares.
+
+            And its affiliated colleges—including Jawaharlal Nehru Medical College and Zakir Hussain College of Engineering and Technology—are located there, as are a number of other degree-granting institutions.The university offers more than 300 courses in traditional and modern branches of education. </p>
+            <p>Internationally, AMU was ranked 801-1000 in the QS World University Rankings of 2020. The same rankings ranked it 214 in Asia and 138 among BRICS nations.It was ranked 801-1000 in the world by the Times Higher Education World University Rankings of 2019, 182 in Asia and 157 among BRICS and Emerging Economies in 2017. It was ranked 18 in India overall by the National Institutional Ranking Framework in 2019 and 11th among universities.</p>
+	     	<p></p>
+	     </div>
+	     						<div class="parallax-container">
+							      <div class="parallax"><img src="images/mang.jpg"></div>
+							    </div> 
+         <!-- for place 2 -->
+	     <div class="container"> 
+	     		<h2 class="header  blue-text text-accent-3">Manglayatan University</h2>
+	     		<p>Manglayatan University is a private university established in 2006, recognised by University Grants Commission (UGC). Its campus is located away from the  Aligarh City in the Indian state of Uttar Pradesh.Situated 18km from the Yamuna Expressway in Uttar Pradesh, Mangalayatan University was founded in 2006 and has graduated over 3500 students. Nearly 3000 students currently study on its campus. Mangalayatan University’s vision is to give students from all kinds of background a quality educational experience leading to legitimately rewarding career opportunities.</p>
+	     		<p>Mangalayatan University, founded on the best tenets of Jainism, is home to students of all religions, from all walks of life. At Mangalayatan University, we encourage students to discover their spiritual being and offer them a variety of avenues to do this. From yoga lessons to religious discourses to landmark religious monuments on campus, students have several salubrious influences on their lives throughout their stay on campus.</p>
+	     </div>
+	     						 <div class="parallax-container">
+							      <div class="parallax"><img src="images/alfort.jpg"></div>
+							    </div> 
+	     <!-- for place 3 -->
+	     <div class="container">
+	     	<h2 class="header  blue-text text-accent-3">Aligarh Fort</h2>
+	     	<p>Aligarh Fort or Aligarh Quila, Baunasaur Quila and Ramgarh Quila is situated in Qila, Aligarh, Uttar Pradesh. Managed by the Aligarh Muslim University, this structure represents historic Islamic influences from an earlier era through its exquisite architecture and intricate symbolic carvings. The magnificent edifice features distinguishing minarets, bastions, terraces, and a grand arched entrance that announces its presence to the general public.<p> There is a garden, supervised by the Botanical Department of Aligarh Muslim University, adds to the grandeur of the fort, with its diverse variety of vibrant flowers, trees and animal species such as delicate koel birds, beautiful peacocks and ferrets among others.</p>
+	     	</p>
+	     </div>       
+	     						<div class="parallax-container">
+							      <div class="parallax"><img src="images/mangview.jpg"></div>
+							    </div> 
+	     <!-- for place 4 -->
+	     <div class="container">
+	     	 <h2 class="header  blue-text text-accent-3">Teerthdham Mangalayatan Temple</h2>
+	     	 <p> Teerthdham Mangalyatan is a Digamber Jain Pilgrimage site spread over 16 acres of area in Aligarh. Besides many temples in the complex there is Jain school of teaching and Jain food restaurant within the complex.</p>
+	     	 <p>In the Mangalayatan complex, it is a attractive place. Annual Gatherings happen here from 30th January to 4th February. Classes and Camps happen in Diwali and Holi. The temple is decorated beautifully on Mahivir Jayanti and other Jain festivals.</p>
+	     	 <p> In standing posture, the temple houses a white marble statue of Bhagwan Bahubali. The 7'3" high statue of the Bahubali stands on a 24" high lotus platform.</p>
+	     </div>
+	     	     				<div class="parallax-container">
+							      <div class="parallax"><img src="images/mang2.jpg"></div>
+							    </div> 
+	     <!-- for place 5 -->
+	     <div class="container">
+	     	<h2 class="header  blue-text text-accent-3">Khereshwar Mandir</h2>
+	     	<p>Khereshwar Temple is one of the holiest shrines of the region, situated in Tajpur Rasulpur village. This temple is dedicated to Lord Shiva and is renowned for beautiful architecture along with engraved ceilings of metallic mural finish. Apart from enshrinement of Lord Shiva in the form of ‘Shivlingam’, the shrine features several Brass idols of Hindu deities.In vicinity to the temple, there is a small pond and beautiful fields. The shrine of Lord Shiva is situated on Khair Bypass road which connects State highway 22 A and National Highway 91. Situated at a distance of 5 kilometres km from the city centre, the temple is easily accessible by various modes of public transportation .</p>
+	     </div>								
+	     						<div class="parallax-container">
+							      <div class="parallax"><img src="images/Library2.jpg"></div>
+							    </div> 
+	     <!-- for place 6 -->
+	     <div class="container ">
+	     	<h2 class="header blue-text text-accent-3">Library</h2>
+	     	<p> The Central Library of the Aligarh Muslim University popularly known as Maulana Azad Library is one of the largest university libraries of the World which possesses about 18,00,000 volumes of books and 55,097 current journals in hard and soft copies. The foundation of the Library was laid in 1877 at the time of establishment of the Mohammedan Anglo Oriental College by Lord Lytton.</p>
+	     	<p>The Library is very much concerned with the conservation and preservation of the Worlds documentary heritage.It consists of many rare manuscripts.Valuable Sanskrit works on Hinduism translated in Persian are also available in the Library.</p>
+	     </div>
+	     		               <div class="parallax-container">
+							      <div class="parallax"><img src="images/numais.jpg"></div>
+							    </div> 
+	     <!-- for place 7 -->
+	     <div class="container">
+	     	<h2 class="header  blue-text text-accent-3">Aligarh Exhibition</h2>
+	     	<p> The Famous Aligarh Numaish (exhibition) was initially started as a horse fair for Nawabs. to display their wealth and lifestyles. In 1880, on suggestion of Raja Harinarayan Singh the event was named the Aligarh District Fair’ during the rule of the collectorate marshall. It is now called the ‘Rajkiya Krishi Udyog Pradarshini – Aligarh’. It is part of the life of the residents of Aligarh city.The exhibition is held every year from the end of January to third weak of February. This is awaited by the people of Aligarh with passion and excitement. Many families await this occasion for purchasing variety of stuff and fanciful items .</p>
+	     	<strong>Food Attractions</strong>
+	     	<p>Halwa Parathaa,Ice-Cream, Chai, Special Chaat ,Seekh Kababs are great attractions in Numaish for foodies.</p>
+	     </div>
+         
+
+	     		               <div class="parallax-container">
+							      <div class="parallax"><img src="images/clotower.jpg"></div>
+							    </div> 
+	     <!-- for place 7 -->
+	     <div class="container">
+	     	<h2 class="header  blue-text text-accent-3">Clock Tower</h2>
+	     	<p> The Ghanta Ghar or Clock Tower is one of the oldest locations in Aligarh, and is more than 200 years old. It is situated in front of the residence of the district magistrate.</p>
+	     	
+	     	<p>Gothic Architecture is found in this tower very strikingly. There are various elements like pointed arches, the gothic vault, and stained glass. Gothic Architecture is also marked by the presence of the high door and window openings, arcades, vaulting and ornamentation of the pointed arches which indeed is so characteristic as to give a suggestion of height coinciding with the aspiring tendency of style and it’s connection with the religious enthusiasm of the period.</p>
+	     </div>
+
+
+</section>
+
+
+<!-- NewDevelopment of the city -->
+<section id="section-new">
+	
+  <div class="row no-gutters bg-info position-relative">
+      <div class="col-md-6 mb-md-0 p-md-4">
+        <img src="images/lamplife.jpg" class="w-100" alt="...">
+      </div>
+      <div class="col-md-6 position-static p-4 pl-md-0">
+        <h3 class="mt-0">New Development</h3>
+        <p>Aligarh City is also emerging as major industrial area in the state of Uttar Pradesh.TalaNagri is famous for high quality of locks in the world.
+            It is a university town, notable as the seat of Aligarh Muslim University, Education sector is also booming now as engineering and medical exams.</p>
+            <p>Real Estate like Ozone City, Sangvan City is also buiding a infrastructure for growing consistantly.</p>
+        <!-- <a href="#" class="stretched-link">Go somewhere</a> -->
+      </div>
+</div>
+								<div class="parallax-container">
+							      <div class="parallax"><img src="images/ozone.jpg"></div>
+							    </div> 
+
+        <div class="container">
+	     	<h2 class="header  blue-text text-accent-3">Ozone City</h2>
+	     	<p>OZONE CITY is one of the most prestigious project of Ozone Group. It is the 1st integrated township at Aligarh proposed to be developed over more than 200 acres of area. The township include fully developed plots, lavish home, apartments, pent house, duplex, independent floors and villas, club, commercial centers and shop, institutional buildings, school, dispensary, hospital, parks, restaurant, temple, hotel, SCF and playground. There is also the provision for Mall and Multiplex.</p>
+
+			<p>Running through the township, there are several parks and green areas. These are aesthetically designed with beautiful landscaping, trees and plants bringing nature at the doorstep of its inhabitants. Gymnasium, guesthouse, multi – purpose hall, etc. are some of the other available facilities.</p>
+
+			<p>Four phases of the township have already been approved by Aligarh Development Authority and rest of the phases is under process. Many of the customers of 1st two phases have already taken possession and started residing over there. Underground electricity cabling, ultra modern STP, latest technical equipments, grand entrance gates etc are some of the unique features. The township is planned to be developed in a lush landscape with unsullied greens and trendy clubhouse having picturesque swimming pool, indoor and outdoor games, Jacuzzi, spa etc making it the isle of the blessed.</p>
+	     	
+	     	
+	     </div>
+	     						<div class="parallax-container">
+							      <div class="parallax"><img src="images/gvm.jpg"></div>
+							    </div> 
+
+
+			<div class="container">
+	     	<h2 class="header blue-text text-accent-3">Great Value Mall</h2>
+	     	<p> The Great Value Mall has all the major brand showrooms and food joints which includes Spykar, Flying Machine, Chhabra555, Mc Donalds, CCD, etc. It also has special Fundoo Zone for kids. You can also catch the latest movie here at Starworld Cinemas. The mall is spread over 2 acres of land with more than 2,00,000 sq. ft. of covered area. It has the facility of double basement parking for more than 300 vehicles.Located within the most prestigious and upmarket residential area, it is accessible from all major locations of the city.</p>
+	     	
+	     	<p>Starworld Cinemas - Great Value Mall, Sukhravali is a popular theatre located at Great Value Mall, 4th Floor, Ramghat Road, Near Kilkari Hospital, Sukhravali, East, Aligarh. Starworld Cinemas - Great Value Mall, Sukhravali has 4 screens.</p>
+	     </div>		
+
+	                            <div class="parallax-container">
+							      <div class="parallax"><img src="images/waterpark.jpg"></div>
+							    </div>	
+
+
+
+
+		<div class="container">
+	     	<h2 class="header blue-text text-accent-3">Water Park</h2>
+	     	<p> Offering complete water based entertainment opportunities for guests. We offer well designed and developed water pack facilities for Rain Dance & Water Slides that add a thrill to the holidaying experience that will leave guests drenched all over in pure delight. Keeping alive the magic of life in your heart, the water pack facilities offered by us under this include:</p>
+                <ul><li> Modern and exciting water games</li>
+                    <li> Facilities covering inflatables, tubes, mats, costumes, changing rooms etc.</li>
+                    <li>Swimming pool that invites both young and old</li>
+                    <li>Feel drenched all over in pure delight in Rain Dance Party facility</li>
+                </ul>
+               <br>
+                <strong>Safeguards:</strong>      
+                   <p>Top quality maintenance of the facilities with supply of water from filtration plant (ensuring complete safety and hygiene for the visitors)
+                     Innovatively designed water bodies keeping the user safety in mind</p>
+	     </div>						    	    
+	     					 <div class="parallax-container">
+							      <div class="parallax"><img src="images/milkbar.jpg"></div>
+							    </div>
+		<div class="container">
+	     	<h2 class="header blue-text text-accent-3">MilkBar Studio</h2>
+	     	<p> As you know, the experience in a restaurant is not only food. Actually, food is 50% of the experience in a restaurant and the atmosphere is the other big part of it. But what is experience in a restaurant? It’s the place, the decor, the waiting staff and … the music. The last element, music, is the main part of the atmosphere of a restaurant.</p>
+	     	
+	     	<p>Music changes completely our experience in a restaurant and offer Taste of Food with Music</p>
+	     	
+	     </div>	
+	                     <div class="parallax-container">
+							      <div class="parallax"><img src="images/railroadway.jpg"></div>
+							    </div>
+
+		<div class="container">
+	     	<h2 class="header blue-text text-accent-3">City Old Market</h2>
+	     	<p> As you know, the experience in a restaurant is not only food. Actually, food is 50% of the experience in a restaurant and the atmosphere is the other big part of it. But what is experience in a restaurant? It’s the place, the decor, the waiting staff and … the music. The last element, music, is the main part of the atmosphere of a restaurant.</p>
+	     	
+	     	<p>Music changes completely our experience in a restaurant and offer Taste of Food with Music</p>
+	     	
+	     </div>						    
+
+</section>
+<br><br>
+<br><br>
+<br><br>
+
+
+
+
+<section id="section-food">
+		<div class="slider">
+		    <ul class="slides">
+		      <li>
+		        <img class="responsive-img" src="images/food3.jpg"> 
+		        <div class="caption center-align">
+		          <h3>Laughter is BRIGHTEST !</h3>
+		          <h5 class="light white-text text-lighten-3"> where FOOD is BEST.</h5>
+		        </div>
+		      </li>
+		      <li>
+		        <img class="responsive-img" src="images/food2.jpeg"> <!-- random image -->
+		        <div class="caption left-align">
+		          <h3>Cooking is about creating</h3>
+		          <h5 class="light grey-text text-lighten-3">something delicious for someone else.</h5>
+		        </div>
+		      </li>
+		      <li>
+		        <img class="responsive-img"  src="images/food4.jpg"> <!-- random image -->
+		        <div class="caption right-align">
+		          <h3>Enjoy Life !</h3>
+		          <h5 class="light grey-text text-lighten-3">Its Delicious.</h5>
+		        </div>
+		      </li>
+		      <li>
+		        <img class="responsive-img"  src="images/food5.jpg"> <!-- random image -->
+		        <div class="caption center-align">
+		          <h3>Come join us, take a taste.</h3>
+		          <h5 class="light grey-text text-lighten-3">Life is so endlessly delicious.</h5>
+		        </div>
+		      </li>
+		      <li>
+		        <img class="responsive-img" src="images/food6.jpg"> <!-- random image -->
+		        <div class="caption center-align">
+		          <h3>Good Food, Good Mood</h3>
+		          <h5 class="light grey-text text-lighten-3">there is no fear or guilt,only joy and balance.</h5>
+		        </div>
+		      </li>
+		    </ul>
+		  </div>
+
+
+
+<br><br><br>
+<!-- food intro -->
+
+	<div class="row no-gutters bg-success position-relative">
+      <div class="col-md-6">   <!-- mb-md-0 p-md-4 -->
+        <img src="images/food.jpg" class="w-100" alt="...">
+      </div>
+      <div class="col-md-6 position-static p-4 pl-md-0  p-md-4">
+        <h3 class="mt-0">Food</h3>
+        <p>It is a university town, notable as the seat of Aligarh Muslim University, Education sector is also booming now as engineering and medical exams.</p>
+            <p>Best authentic food, great price, great taste, service great as always, centrally located and close to Center Point and Railway Station. Services offered for families seperately, good to organize events like birthday and parties.</p>
+        <!-- <a href="#" class="stretched-link">Go somewhere</a> -->
+        <p>Here are some important foodie points : </p>
+      </div>
+    </div>
+<br><br><br>
+<div class="container">
+	<ul class="collection">
+				    <li class="collection-item avatar">
+                        <img src="images/kacho.jpg" alt="" class="circle">
+                           <span class="title font-weight-bold">Kachodi</span>
+				             <p>Desi ghee ki kachodhi at Dauji Maharaj, Hanuman Mandir, Mahaveerganj (8am to 2pm)</p>
+				       <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+				    </li>
+
+
+
+					<li class="collection-item avatar">
+                        <img src="images/food.jpg" alt="" class="circle">
+                           <span class="title font-weight-bold">Matra paapadh</span>
+				             <p>Matra paapadh , Near Sindhi Sweets, Nai Basti (9am to 2pm)</p>
+				       <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+					</li>
+
+					<li class="collection-item avatar">
+						<img src="images/dahialoo.jpg" alt="" class="circle">
+                           <span class="title font-weight-bold">Gulab Jamun</span>
+				             <p>Dahi Aloo and Gulab Jamun at Ganpat Tikki, Samad Road and Bada Bazar (All day)</p>
+				       <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+					
+				    </li>
+
+					<li class="collection-item avatar">
+                       <img src="images/tikki.jpg" alt="" class="circle">
+                           <span class="title font-weight-bold">Aloo Tikki</span>
+				             <p>Aloo Tikki, Opposite SBI main Branch (5pm onwards)</p>
+				       <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+					</li>
+
+					<li class="collection-item avatar">
+						<img src="images/cheela.jpg" alt="" class="circle">
+                           <span class="title font-weight-bold">Ande-maide ka masala cheela</span>
+				             <p>Ande-maide ka masala cheela at Maneeram, Near Railway station, Under meenaxi flyover (6pm onwards)</p>
+				       <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+					</li>
+
+					<li class="collection-item avatar">
+						<img src="images/samos.jpg" alt="" class="circle">
+                           <span class="title font-weight-bold">Paneer Pakoda</span>
+				             <p>Samosa, Bread Pakoda, Mix Pakoda, Paneer Pakoda with Imli Pyaz ki chatney at Sindhi, Center Point and Nai Basti (all day)</p>
+				       <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+					</li>
+
+					<li class="collection-item avatar">
+						<img src="images/dosa.jpg" alt="" class="circle">
+                           <span class="title font-weight-bold">Dosa</span>
+				             <p>Dosa at Madrasi Thela, Near Varun Hospital, Vishnupuri (6pm onwards)</p>
+				       <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+					</li>
+
+					<li class="collection-item avatar">
+						<img src="images/Halwa.jpg" alt="" class="circle">
+                           <span class="title font-weight-bold">Halwa Parantha</span>
+				             <p>Halwa Parantha at Pishauri, Halwaayi Khana (5pm onwards) only in FEBRUARY month during Numaish</p>
+				       <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+					</li>
+
+					<li class="collection-item avatar">
+						<img src="images/custurd.jpg" alt="" class="circle">
+                           <span class="title font-weight-bold">Custard</span>
+				             <p>Custard at Dikhush, Dodhpur.</p>
+				       <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+					</li>
+
+					<li class="collection-item avatar">
+						<img src="images/kulfi.jpg" alt="" class="circle">
+                           <span class="title font-weight-bold">Kulfi Falooda</span>
+				             <p>Kulfi Falooda at Sindhi, Rasalganj (during summers)</p>
+				       <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+					</li>
+
+					<li class="collection-item avatar">
+						<img src="images/gajak.jpg" alt="" class="circle">
+                           <span class="title font-weight-bold">Gajak</span>
+				             <p>Gajak at Jalaali Wala, Station Road and Madar Gate during winters.</p>
+				       <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+					</li>
+
+					<li class="collection-item avatar">
+						<img src="images/food1.jpg" alt="" class="circle">
+                           <span class="title font-weight-bold">Ande Ka Halwa</span>
+				             <p>Ande ka halwa at the famous halwa wale uncle, Upper fort. (7pm to 12 midnight) Available in winters only.</p>
+				       <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+					</li>
+
+					<li class="collection-item avatar">
+						<img src="images/patties.jpg" alt="" class="circle">
+                           <span class="title font-weight-bold">Ragdha Patties</span>
+				             <p>Ragdha Patties at Avon Namkeens, Railway Road (all day)</p>
+				       <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+				   </li>
+
+					<li class="collection-item avatar">
+						<img src="images/saidaba.jpg" alt="" class="circle">
+                           <span class="title font-weight-bold">Vegetarian Maincourse</span>
+				             <p>Vegetarian Maincourse at SaiDhaba, Tasweer Mahal</p>
+				       <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+					</li>
+
+					<li class="collection-item avatar">
+						<img src="images/raita.jpg" alt="" class="circle">
+                           <span class="title font-weight-bold">Buraani Raita</span>
+				             <p>Buraani Raita, Rampuri Biryaani, Chillie Fried Mushroom and Sizzler at Ruby Hotel, Near Novelty Talkies, Bus Stand.</p>
+				       <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+					</li>
+
+					<li class="collection-item avatar">
+						<img src="images/pizza.jpg" alt="" class="circle">
+                           <span class="title font-weight-bold">Pizza</span>
+				             <p>Chinese Bhel and Pizza at Kwality Snack Shoppe, Center Point.</p>
+				       <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+					</li>
+
+					<li class="collection-item avatar">
+						<img src="images/malaichap.jpg" alt="" class="circle">
+                           <span class="title font-weight-bold">Malaayi Chaap</span>
+				             <p>Afghani and Malaayi Chaap at Richie Rich, Center Point.</p>
+				       <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+					</li>
+
+					<li class="collection-item avatar">
+						<img src="images/momos.jpg" alt="" class="circle">
+                           <span class="title font-weight-bold">Momos</span>
+				             <p>Momos, Honey Chillie Potato and all this at Momos Point, Center Point.</p>
+				       <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+					</li>
+
+					<li class="collection-item avatar">
+						<img src="images/pan.jpg" alt="" class="circle">
+                           <span class="title font-weight-bold">Pan</span>
+				             <p>Pan at Ballo, Dhodhpur chauraha.</p>
+				       <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+					</li>
+
+					<li class="collection-item avatar">
+						<img src="images/dalsev.jpg" alt="" class="circle">
+                           <span class="title font-weight-bold">Dal and Aloo Khaste</span>
+				             <p>Dal and Aloo Khaste with khatti dahi at Kalua Khaste Wale, Vishnupuri. Jalebi opposite to it.</p>
+				       <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+					</li>
+
+					<li class="collection-item avatar">
+						<img src="images/muglai.jpg" alt="" class="circle">
+                           <span class="title font-weight-bold">Beef Kebab</span>
+				             <p>Beef Kebab at Dodhpur near Aligarh Chicken Corner</p>
+				       <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+					</li>
+
+					<li class="collection-item avatar">
+						<img src="images/chai.jpg" alt="" class="circle">
+                           <span class="title font-weight-bold">Chai</span>
+				             <p>Chai behind Maulana Azad Library (all day) and Opposite Atrauli Adda and Zakariya for late night.</p>
+				       <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+					</li>
+
+					<li class="collection-item avatar">
+						<img src="images/kachodi.jpg" alt="" class="circle">
+                           <span class="title font-weight-bold">Kachodi</span>
+				             <p>Kachodhi at Shyam Kachodhi Wale in Sasni, 30kms from Aligarh. (8am to 2pm)</p>
+				       <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+					</li>
+
+					<li class="collection-item avatar">
+						<img src="images/dahialoo.jpg" alt="" class="circle">
+                           <span class="title font-weight-bold">Dahi Samose</span>
+				             <p>Dahi Samose at Raghav baba, Sofa Neher, Near Khair, 30kms from Aligarh</p>
+				       <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+					</li>
+		</ul>			
+
+</div>
+
+</section>
+
+<!-- footer part -->
+
+<section id="section-contact">
+	<!-- footer design -->
+
+<!-- Footer -->
+<footer class="page-footer font-small stylish-color-dark pt-4" style="background-color: cornflowerblue ">
+ <!-- Footer Links -->
+  <div class="container text-center text-md-left">
+  <!-- Grid row -->
+    <div class="row">
+      <!-- Grid column -->
+      <div class="col-md-4 mx-auto">
+        <!-- Content -->
+        <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Interested in hiring me for your project?</h5>
+        <p>Looking for an full-stack web developer to build your web app or ship your software product? To start an initial chat, just drop me an email at mr.sudmca@gmail.com</p>
+      </div>
+      <!-- Grid column -->
+      <hr class="clearfix w-100 d-md-none">
+       <!-- Grid column -->
+      <div class="col-md-2 mx-auto">
+        <!-- Links -->
+        <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Quick</h5>
+        <ul class="list-unstyled">
+          <li>
+            <a href="#section-home" style="font-size:14px; color:black;">Home</a>
+          </li>
+          <li>
+            <a href="#section-famous" style="font-size:14px; color:black;">Famous</a>
+          </li>
+          <li>
+            <a href="#section-new" style="font-size:14px; color:black;">New</a>
+          </li>
+          <li>
+            <a href="#section-foof" style="font-size:14px; color:black;">Food</a>
+          </li>
+          <li>
+            <a href="#section-contact" style="font-size:14px; color:black;">About</a>
+          </li>
+        </ul>
+
+      </div>
+      <!-- Grid column -->
+      <hr class="clearfix w-100 d-md-none">
+      <!-- Grid column -->
+      <div class="col-md-2 mx-auto">
+        <!-- Links -->
+        <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Connect</h5>
+        <ul class="list-unstyled">
+          <li>
+            <a href="#" class="fa far fa-envelope" style="font-size:14px;color:black;"> Email</a>
+          </li>
+          <li>
+             <a href="#" class="fa fa-mobile-phone" style="font-size:14px;color:black"> Add.  </a>
+          </li>
+          <li>
+            <a href="#" class="fas fa-map-marker" style="font-size:14px;color:black;">  Location</a>
+          </li>
+          <li>
+            <a href="#!"></a>
+          </li>
+        </ul>
+
+      </div>
+      <!-- Grid column -->
+    </div>
+    <!-- Grid row -->
+  </div>
+  <!-- Footer Links -->
+  <hr>
+  <!-- Call to action -->
+ <!--  <ul class="list-unstyled list-inline text-center py-2">
+    <li class="list-inline-item">
+      <h5 class="mb-1">Register for free</h5>
+    </li>
+    <li class="list-inline-item">
+      <a href="#!" class="btn btn-danger btn-rounded">Sign up!</a>
+    </li>
+  </ul> -->
+  <!-- Call to action -->
+  <hr>
+  <!-- Social buttons -->
+  <ul class="list-unstyled list-inline text-center">
+    <li class="list-inline-item">
+      <a href="#" class="btn-floating btn-fb mx-1" style="font-size:20px; color:black; pointer-events: auto">
+        <i class="fab fa-facebook-f"> </i>
+      </a>
+    </li>
+    <li class="list-inline-item">
+      <a href="https://github.com/SudhanshuSingh100/" class="btn-floating btn-tw mx-1" style="font-size:20px;color:black;pointer-events: auto">
+        <i class="fab fa-github-square"> </i>
+      </a>
+    </li>
+    <li class="list-inline-item">
+      <a href="#" class="btn-floating btn-gplus mx-1" style="font-size:20px;color:black;pointer-events: auto">
+        <i class="fab fa-google-plus-g"> </i>
+      </a>
+    </li>
+    <li class="list-inline-item">
+      <a  href="https://www.linkedin.com/in/sudhanshu-singh-911135166/" class="btn-floating btn-li mx-1" style="font-size:20px;color:black;pointer-events: auto">
+        <i class="fab fa-linkedin-in"> </i>
+      </a>
+    </li>
+    <li class="list-inline-item">
+      <a href="https://www.instagram.com/mr.sudhann/" class="btn-floating btn-dribbble mx-1" style="font-size:20px;color:black;pointer-events: auto">
+        <i class="fab fa-instagram" > </i>
+      </a>
+    </li>
+  </ul>
+  <!-- Social buttons -->
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center">
+         
+  	    <p> © 2020 Copyright:</p>
+         <p>Design and Developed by Sudhanshu Singh</p>
+          
+   </div>
+  <!-- Copyright -->
+</footer>
+	
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+// // <!-- per-loading icon -->
+ 
+ var preloader = document.getElementById('loading');
+ function loaderFunc()
+ {
+ 	preloader.style.display = 'none';
+ }
+
+// =====================
+var nav = document.getElementById('navscript')
+
+  window.onscroll = function(){
+
+      if (window.pageYOffset >700){
+        
+        nav.style.background = "cornflowerblue";
+        nav.style.boxShadow = "0px 7px 3px #fff";
+      }
+      else{
+        nav.style.background = "tranparent";
+        nav.style.boxShadow = "grey";
+      }
+  }
+
+// navbar--materialize
+ $(document).ready(function(){
+    $('.sidenav').sidenav();
+  });
+
+
+  
+ // slider home
+  $(document).ready(function(){
+    $('.slider').slider({ 
+    	fullWidth: true,
+       indicators: true  });
+  });
+
+ // $('.carousel.carousel-slider').carousel({
+ //    fullWidth: true,
+ //    indicators: true,
+    
+ //  });
+
+// parallex jQuery---materialize
+ $(document).ready(function(){
+    $('.parallax').parallax();
+  });
+
+</script>
+
+</body>
+</html>
