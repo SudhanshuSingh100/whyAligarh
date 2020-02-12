@@ -116,7 +116,7 @@
 			    </div>
 			</nav>
            
-			  <ul class="sidenav blue accent-1 white-text text-lighten-2" id="mobile-demo">   
+			  <ul class="sidenav blue light-text" id="mobile-demo">   
 			    <li><a href="#section-home">Home</a></li>
 			    <li><a href="#section-new">New</a></li>
 			    <li><a href="#section-famous">Famous</a></li>
@@ -661,7 +661,7 @@
             <a href="#section-new" style="font-size:14px; color:black;">New</a>
           </li>
           <li>
-            <a href="#section-foof" style="font-size:14px; color:black;">Food</a>
+            <a href="#section-food" style="font-size:14px; color:black;">Food</a>
           </li>
           <li>
             <a href="#section-contact" style="font-size:14px; color:black;">About</a>
@@ -813,6 +813,8 @@ var nav = document.getElementById('navscript')
   
  // slider home
   $(document).ready(function(){
+    $('.sidenav.blue.light-text').sidenav();	  
+	  
     $('.slider').slider({ 
     	fullWidth: true,
        indicators: true  });
